@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    .bodyGeneral{
+    padding: 150px 10px;
+    background-image: url(./assets/wall\ redon.jpg) ;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "section section section"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    }
+    header{
+    grid-area: header;
+    }
+    section{
+    grid-area: section;
+    }
+    footer{
+    grid-area: footer;
+    }
+    
+    header{
+    background-color: #02141dc4;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px; 
+    position: fixed;
+    }
+    
+    .menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    }
+    .menu a{
+    text-decoration: none;
+    color: white;
+    }
+    
+    .logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 80px;
+    }
+    
+    header h3 a{
+    text-decoration: none;
+    color: rgba(12, 9, 26, 0.692);
+    }
+    
+    .menu ul{
+    display: flex;
+    text-align: right;
+    margin-right: 80px; 
+    }
+    
+    .menu ul li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px 0;
+    line-height: 60px;
+    color:rgb(223, 207, 207);
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: max-content;
+    }
+    
+    .menu ul li a{
+    padding: 5px 12px;
+    border-radius: 3px ;
+    }
+    
+    .menu ul li a:hover{
+    background-color: rgb(94, 83, 64);
+    transition: o.5s;
+    }
+    .menu__resp{
+    background:rgb(182, 153, 153);
+    font-size: 25px;
+    padding: 0 20px;
+    
+    display:none;
+    }
+    /* carteleta */
+    
+    .cartel{
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f9fc63;
+    }
+    
+    .cartel__poster{
+    display: inline-block;
+    }
+    
+    .cartel__poster h5{
+    list-style: none;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    }
+    
+    .cartel__poster h5 a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(10, 2, 41);
+    font-weight: bolder;
+    }
+    
+    .cartel__poster img{
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    }
+    
+    /*Cines*/
+    
+    section{
+    margin: auto 0;
+    padding: 5px;
+    display: flex; 
+    justify-content: space-around;
+    
+    }
+    
+    .map{
+    margin: 10px; 
+    }
+    
+    .texto-map{
+    background-color: #fbf8f1a4;
+    margin:60px 30px 60px 30px;
+    padding: 5px;
+    
+    }
+    
+    /* Pagesfilm */
+    
+    .bodyFilm{
+    background-image: url(./assets/grey.jpg);
+    padding: 150px 10px;
+    display: grid;
+    grid-template-areas: "header header"
+    "main aside"
+    "main aside"
+    "footer footer" 
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+    header{
+    grid-area: header;
+    }
+    section{
+    grid-area: main;
+    }
+    footer{
+    grid-area: footer;
+    }
+    .film__texto{
+    margin: 20px 50px 30px 20px; 
+    }
+    
+    .film__texto h2{
+    font-family: 'Sonsie One', cursive;
+    font-size: 50px;
+    color: rgba(29, 28, 28, 0.836);
+    }
+    
+    .film__texto p{
+    font-family: 'Nunito', sans-serif;
+    margin: 20px 10px 10px 10px;
+    }
+    
+    .film__texto iframe{
+    margin-top: 40px;
+    padding: 1px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+    }
+    
+    .poster{
+    margin: 10px 20px 10px 30px;
+    }
+    
+    .poster img{
+    border-radius: 3px;
+    padding: 1px;
+    width: 500px;
+    height: 695px;
+    box-shadow: 0 5px 10px 10px rgba(196, 182, 182, 0.76);
+    }
+    
+    /* Redes sociales*/
+    
+    .redes{
+    margin:50px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .redes img{
+    display: inline-block;
+    margin: 15px 15px;
+    width: 30px;
+    height: 30px;
+    
+    }
+    
+    .legal{
+    margin: 15px 0 30px 0;
+    text-align: center;
+    font-family:monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FBF8F1;
+    }
+    
+    /*cartelera
+    
+    .conte-trailer{
+    margin: 30px 100px 20px 100px;
+    padding: 5px;
+    }
+    
+    .text-trailer{
+    margin: 10px auto;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(14, 5, 22);
+    }
+    
+    /*.trailer{
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .trailer iframe{
+    margin: 10px 40px 10px 40px;
+    width: 400px;
+    height: 300px;
+    
+    }*/
+    
+    /*cines*/
+    
+    @media (max-width: 950px){
+    .logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 80px; 
+    }
+    }
+    
+    @media(max-width: 667px){
+    .logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 80px; 
+    }
+    .menu ul{
+    display: none;
+    }
+    .menu__resp{
+    background:rgba(57, 151, 175, 0.89);
+    font-size: 25px;
+    padding: 0 20px;
+    display: block;
+    }
+    }
+    
+    @media (max-width: 375px){
+    
+    .logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 80px; 
+    }
+    .menu__resp{
+    background:rgba(57, 151, 175, 0.89);
+    font-size: 10px;
+    padding: 0 20px;
+    display: block;
+    }
+    .cartel{
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f9fc63;
+    }
+    
+    }
+    
+    /* Media Film */
+    @media(max-width: 667px){
+    .logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 80px; 
+    }
+    .menu ul{
+    display: none;
+    }
+    .menu__resp{
+    background:rgba(57, 151, 175, 0.89);
+    font-size: 25px;
+    padding: 0 20px;
+    display: block;
+    }
+    }
+    
+    @media (max-width: 375px){
+    .bodyFilm{
+    background-image:linear-gradient(rgba(230, 212, 212, 0.712),rgba(173, 159, 159, 0.76)), url(./assets/Guardianes-de-la-galaxia-Vol2.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 150px 10px;
+    display:flex;
+    flex-direction: column;
+    }
+    .logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 80px; 
+    }
+    .menu__resp{
+    background:rgba(57, 151, 175, 0.89);
+    font-size: 10px;
+    padding: 0 20px;
+    display: block;
+    }
+    .film__texto{
+    margin: 10px auto; 
+    }
+    .film__texto h2{
+    margin-bottom: 30px;
+    font-family: 'Sonsie One', cursive;
+    font-size: 35px;
+    color: rgba(29, 28, 28, 0.836);
+    text-shadow:3px 3px rgb(146, 145, 143);
+    }
+    .film__texto p{
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    margin:30px 0 20px 0;
+    box-shadow: -2px 2px 3px 3px rgba(0, 0, 0, 0.575);
+    }
+    iframe{
+    width:100%;
+    height: 200px;
+    }
+    .film__texto iframe{
+    margin-top: 20px;
+    padding: 1px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+    }
+    aside{
+    display: none;
+    }
+    .redes{
+    margin:50px 0 30px 0;
+    display: flex;
+    justify-content: center; 
+    }
+    .redes img{
+    display: inline-block;
+    margin: 15px 15px;
+    width: 20px;
+    height: 20px;
+    }
+    .legal{
+    margin: 15px 0 30px 0;
+    text-align: center;
+    font-family:monospace;
+    font-weight: bold;
+    font-size: 11px;
+    color: #FBF8F1; 
+    }
+    }
+    
+    
