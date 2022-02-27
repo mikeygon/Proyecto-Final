@@ -9,17 +9,17 @@
     background-attachment: fixed;
     padding: 100px 5px 0px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header"
     "section section section"
     "section section section"
     "footer footer footer"
     ;
     grid-template-columns:repeat (3, 1fr);
- 
+
 }
 
-header{
+ header{
     grid-area: header;
 }
 section{
@@ -29,18 +29,12 @@ footer{
     grid-area: footer;
 }
 header{
-    background-color: #02141dc4;  
-    height: 80px;
+    background-color: #02141dc4;
+    height: 60px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-} .menu{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 12px;
-    max-width: 992px;
-    margin: 0 auto;
 }
 .btn-check{
     color: white;
@@ -50,7 +44,7 @@ header{
     padding: 0 30px;
     line-height: 60px;
     display: none;
-} 
+}
  .logo{
     font-size: 30px;
     font-weight: bold;
@@ -59,59 +53,39 @@ header{
     text-decoration: none;
     color: #FBF8F1;
 }
-
- .menu__item {
-    display: flex;
-    margin-right: 50px;
-    list-style: none; 
-} 
-
-.menu__item li{
-    border-radius: 2px;
-    margin: 0 10px ;
-    line-height: 80px;
-    text-transform: uppercase;
-    width: max-content;
-}
-.menu__item li a{
-   color: #FBF8F1;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 3px;
-}
 #check{
     display: none;
-    
 }
 
 .menu__item li a:hover,
 .menu__item_active {
-    background-color: #034574;
+    background-color: #f8f9facb;
     transition:0.5s;
     border-radius: 10px;
-}   
+}
 
 /* Cartelera */
 
 .cartel{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-     background-color: #f8f9fc36;
+    flex-direction: row;
+    background-color: #f8f9fc36;
     padding: 10px;
     margin: 50px 150px 0 150px;
     border-radius: 20px;
-} 
+}
 .cartel__poster{
     margin: 0 20px;
-    margin-left: 25px;
-    display: inline-block;   
+    margin-left: 2px;
+
 }
 
 .cartel__poster h5{
     list-style: none;
-    margin: 25px 0;
-    text-align: center;  
+    margin: 18px 0;
+    text-align: center;
+    font-size: 13px;
 }
 
 .cartel__poster h5 a{
@@ -128,19 +102,19 @@ header{
     width: 200px;
     height: 300px;
     border-radius: 20px;
-} 
+}
 
 /*Cines*/
 
 section{
     margin: auto 0;
     padding: 5px;
-    display: flex;  
+    display: flex;
     justify-content: space-around;
 }
 
 .map{
-    margin: 10px;  
+    margin: 10px;
 }
 
 .texto-map{
@@ -159,7 +133,7 @@ section{
     grid-template-areas: "cabezaFilm cabezaFilm"
     "main aside"
     "main aside"
-    "pieFilm pieFilm " 
+    "pieFilm pieFilm "
     ;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -177,31 +151,31 @@ section{
     grid-area: pieFilm;
     }
     .film__texto{
-    margin: 20px 50px 30px 20px; 
+    margin: 20px 50px 30px 20px;
     }
-    
+
     .film__texto h2{
     font-family: 'Sonsie One', cursive;
     font-size: 50px;
     color: rgba(29, 28, 28, 0.836);
     }
-    
+
     .film__texto p{
     font-family: 'Nunito', sans-serif;
     margin: 20px 10px 10px 10px;
     }
-    
+
     .film__texto iframe{
     margin-top: 40px;
     padding: 1px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px;
     }
-    
+
     .poster{
     margin: 10px 20px 10px 30px;
     }
-    
+
     .poster img{
     border-radius: 3px;
     padding: 1px;
@@ -209,22 +183,25 @@ section{
     height: 695px;
     box-shadow: 0 5px 10px 10px rgba(196, 182, 182, 0.76);
     }
-    
+/*  Contactos */
+.container{
+   background-color: #84d4d0b0;
+   height: 75vh;
+   width: 65%;
+}
 
 /* Redes sociales*/
 .redes{
     margin: 100px 0 30px 0;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
-
 .redes__icons{
     display: inline-block;
     margin: 0 30px;
     width: 50px;
     height: 50px;
     text-align: center;
-    
 }
 .redes__icons a{
     display: block;
@@ -263,51 +240,33 @@ section{
         background-repeat: no-repeat;
         width: auto;
         padding-top: 70px;
-      
+
     }
     header{
-        background-color: #02141dc4;  
+        background-color: #02141dc4;
         height: 80px;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
     }
-    
     .btn-check{
-        color: white;
-        background: none;
-        border: none;
-        font-size: 40px;
-        padding: 0 30px;
-        line-height: 60px;
         display: none;
-        
-    } 
-     .logo{
-        font-size: 20px;
-        font-weight: bold;
-        padding: 0 20px;
-        line-height: 80px;
-        text-decoration: none;
-        color: #FBF8F1;
     }
-
     /* CARTELERA  */
-
-    .cartel{
+     .cartel{
         background-color: #f8f9fc36;
         padding: 10px;
         margin: 30px 50px 10 50px;
         border-radius: 20px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: space-around;
     }
     .cartel__poster h5{
         list-style: none;
         margin: 10px 0;
-        text-align: center;  
+        text-align: center;
     }
     .cartel__poster img{
         width: 200px;
@@ -317,9 +276,113 @@ section{
     .legal{
         font-size: 13px;
     }
+    /* Film */
+    .bodyFilm{
+        width:auto;
+        background-image: url(./assets/grey.jpg);
+        padding:100px 0;
+    }
+    header{
+        width: 100%;
+        height: 60px;
+    }
+     .logo{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 20px;
+        line-height: 80px;
+        text-decoration: none;
+        color: #FBF8F1;
+    }
+    .film__texto{
+        margin:10px ;
+    }
+    .film__texto h2{
+        font-family: 'Sonsie One', cursive;
+        font-size: 30px;
+        color: rgba(29, 28, 28, 0.836);
+    }
+    .film__texto p{
+        font-family: 'Nunito', sans-serif;
+        margin: 10px auto;
+    }
+    .film__texto iframe{
+        width: 400px;
+        height: 300px;
+    }
+
+    .poster{
+        margin: 10px;
+    }
+    .poster img{
+        width: 400px;
+        height:495px;
+    }
+}
+
+@media (max-width: 768px){
+    .cartel{
+        background-color: #f8f9fc36;
+        padding: 5px;
+        margin: 30px 50px 10 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cartel__poster h5{
+        list-style: none;
+        margin: 10px 0;
+        font-size: 25px;
+    }
+    .cartel__poster img{
+        width: 300px;
+        height: 380px;
+        border-radius: 20px;
+        width: 100%;
+    }
     
-}  
-  
+  /* film */
+  .bodyFilm{
+    width:auto;
+    background-image: url(./assets/grey.jpg);
+    padding:100px 0;
+}
+.logo{
+   font-size: 20px;
+   font-weight: bold;
+   padding: 0 20px;
+   line-height: 80px;
+   text-decoration: none;
+   color: #FBF8F1;
+}
+.film__texto{
+   margin:5px ;
+}
+.film__texto h2{
+   font-family: 'Sonsie One', cursive;
+   font-size: 25px;
+   color: rgba(29, 28, 28, 0.836);
+}
+.film__texto p{
+   margin: 10px auto;
+   font-size: 13px;
+
+}
+.film__texto iframe{
+   width: 300px;
+   height: 200px;
+}
+
+.poster{
+   margin: 10px;
+}
+.poster img{
+   width: 250px;
+   height:395px;
+}
+}
+
 @media (max-width: 375px ){
 .bodyGeneral{
         background-image: url(./assets/wall\ redon.jpg) ;
@@ -330,7 +393,7 @@ section{
         width: auto;
      }
 header{
-    background-color: #02141dc4;  
+    background-color: #02141dc4;
     height: 60px;
     position: fixed;
     width: 100%;
@@ -370,20 +433,20 @@ header{
     background: rgba(0, 0, 0, .90);
     text-align: center;
     transition: all .5s;
-    } 
+    }
     .menu__item li{
     display:none;
     line-height: 30px;
     margin: 50px;
     transition: all .5s;
-    } 
+    }
     .menu__item li a{
     color: white;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 100px;
     text-decoration: none;
-     } 
+     }
 .menu__item li a:hover,
 .menu__item_active {
     background-color: #034574;
@@ -397,12 +460,132 @@ header{
     height: 65vh;
 }
 #check:checked ~ .menu__item li{
-    display: block; 
+    display: block;
+}
+.bodyFilm{
+    width:auto;
+    background-image:linear-gradient(rgba(230, 212, 212, 0.712),rgba(173, 159, 159, 0.76)), url(./assets/Guardianes-de-la-galaxia-Vol2.jpg) ;
+    padding: 90px 10px;
+}
+header{
+    background-color: #02141dc4;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+     }
+.menu{
+    height:60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     }
+.logo{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 80px;
+    }
+.btn-check{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    }
+.menu__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height:0vh;
+    top: 60px;
+    background: rgba(0, 0, 0, .90);
+    text-align: center;
+    transition: all .5s;
+    }
+    .menu__item li{
+    display:none;
+    line-height: 30px;
+    margin: 50px;
+    transition: all .5s;
+    }
+    .menu__item li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 100px;
+    text-decoration: none;
+     }
+.menu__item li a:hover,
+.menu__item_active {
+    background-color: #034574;
+    transition:0.5s;
+    border-radius: 10px;
+     }
+#check{
+    display:none;
+}
+#check:checked ~ .menu__item{
+    height: 65vh;
+}
+#check:checked ~ .menu__item li{
+    display: block;
+}
+
+.film__texto{
+    margin: 10px auto;
+    width: auto;
+}
+.film__texto h2{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.film__texto p{
+    font-size: 13px;
+}
+.film__texto iframe{
+    width:fit-content;
+    height: fit-content;
+}
+aside{
+    display: none;
+}
+.redes{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.redes{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+}
+.redes__icons{
+        display: inline-block;
+        margin: 0 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+}
+.redes__icons a{
+        padding: 0 2px;
+        line-height: 30px;
+        font-size: 15px;
+}
+.legal{
+        font-size: 10px;
+}
 }
 
 
  /* CARTELERA  */
- 
+/*
 .cartel{
     background-color: #788abecc;
     padding: 10px;
@@ -416,11 +599,11 @@ header{
 }
 .legal{
     font-size: 12px;
- }  
+ }
 }
 /*Media film */
-
-@media (max-width: 992px){
+/*
+@media (max-width: 768px){
     .bodyFilm{
         width: auto;
         width: auto;
@@ -428,14 +611,14 @@ header{
         padding: 100px 10px;
     }
     header{
-        background-color: #02141dc4;  
+        background-color: #02141dc4;
         height: 80px;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
     }
-    
+
     .btn-check{
         color: white;
         background: none;
@@ -444,8 +627,8 @@ header{
         padding: 0 30px;
         line-height: 60px;
         display: none;
-        
-    } 
+
+    }
      .logo{
         font-size: 20px;
         font-weight: bold;
@@ -455,67 +638,67 @@ header{
         color: #FBF8F1;
     }
     .film__texto{
-        margin:10px ; 
-    }       
+        margin:10px ;
+    }
     .film__texto h2{
         font-family: 'Sonsie One', cursive;
         font-size: 30px;
         color: rgba(29, 28, 28, 0.836);
-    }       
+    }
     .film__texto p{
         font-family: 'Nunito', sans-serif;
         margin: 10px auto;
-    }       
+    }
     .film__texto iframe{
         width: 400px;
         height: 300px;
     }
-            
+
     .poster{
         margin: 10px;
     }
-            
+
     .poster img{
         width: 400px;
         height:595px;
-           
+
     }
-} 
-        
- @media(max-width: 768px){
+}
+
+ @media(max-width: 455px){
     .bodyFilm{
         width: auto;
         width: auto;
         padding: 70px 10px;
      }
-               
+
     .film__texto h2{
         font-size: 20px;
     }
     .film__texto p{
         font-size: 13px;
     }
-                    
+
     .film__texto iframe{
         width: max-content;
         height: fit-content;
-                   
+
     }
     .poster img{
         margin-left: 70px;
         width: 250px;
         height:395px;
-                   
+
     }
 }
  @media (max-width: 375px){
     .bodyFilm{
         width:auto;
         background-image:linear-gradient(rgba(230, 212, 212, 0.712),rgba(173, 159, 159, 0.76)), url(./assets/Guardianes-de-la-galaxia-Vol2.jpg) ;
-        padding: 90px 10px;   
+        padding: 90px 10px;
     }
     header{
-        background-color: #02141dc4;  
+        background-color: #02141dc4;
         height: 60px;
         position: fixed;
         width: 100%;
@@ -555,20 +738,20 @@ header{
         background: rgba(0, 0, 0, .90);
         text-align: center;
         transition: all .5s;
-        } 
+        }
         .menu__item li{
         display:none;
         line-height: 30px;
         margin: 50px;
         transition: all .5s;
-        } 
+        }
         .menu__item li a{
         color: white;
         font-size: 15px;
         text-transform: uppercase;
         font-weight: 100px;
         text-decoration: none;
-         } 
+         }
     .menu__item li a:hover,
     .menu__item_active {
         background-color: #034574;
@@ -582,11 +765,11 @@ header{
         height: 65vh;
     }
     #check:checked ~ .menu__item li{
-        display: block; 
+        display: block;
     }
-    
+
     .film__texto{
-        margin: 10px auto; 
+        margin: 10px auto;
         width: auto;
     }
     .film__texto h2{
@@ -606,28 +789,27 @@ header{
     .redes{
         margin-top: 100px;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
     .redes{
             margin: 0 auto;
             display: flex;
-            justify-content: center;   
-    }   
+            justify-content: center;
+    }
     .redes__icons{
             display: inline-block;
             margin: 0 30px;
             width: 30px;
             height: 30px;
-            text-align: center;       
+            text-align: center;
     }
     .redes__icons a{
             padding: 0 2px;
             line-height: 30px;
             font-size: 15px;
-    }      
+    }
     .legal{
             font-size: 10px;
     }
-} 
+}
 
-    
