@@ -1,0 +1,167 @@
+.bodyGeneral{
+    background-image: url(../assets/wall.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 5px 0px;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "section section section"
+    "section section section"
+    "footer footer footer"
+    ;
+    grid-template-columns:repeat (3, 1fr);
+}
+
+ header{
+    grid-area: header;
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+.cartel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #f8f9fc36;
+    padding: 20px 80px;
+    margin: 50px 200px 0 200px;
+    border-radius: 20px;
+}
+.cartel__poster{
+    margin: 0 20px;
+}
+
+.cartel__poster h5{
+    list-style: none;
+    margin: 18px 0;
+    text-align: center;
+    font-size: 13px;
+    transition: 1s all;
+}
+
+.cartel__poster h5 a{
+    text-decoration: none;
+    font-family:cambria;
+    color: rgb(51, 49, 56);
+    font-weight: bolder;
+}
+.cartel__poster h5:hover{
+    background: rgba(236, 233, 233, 0.801);
+    border-radius: 10px;
+    transform: scale(2);
+}
+
+.cartel__poster img{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    transition: 0.9s all;
+}
+.cartel__poster img:hover{
+    transform:scale(1.1);
+}
+/*-----------------Cines----------------*/
+
+section{
+    margin: auto 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.map{
+    margin: 10px;
+}
+
+.texto-map{
+   background-color: #fbf8f1a4;
+   margin:60px 30px 60px 30px;
+   padding: 5px;
+}
+/* ------------- Contactos --------------*/
+.container{
+    background-color: #84d4d0b0;
+    height: 75vh;
+    width: 65%;
+ }
+
+ @media (max-width: 992px){
+    .bodyGeneral{
+        background-image: url(../assets/wall.jpg) ;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: auto;
+        padding-top: 70px;
+
+    }
+     /*------------- CARTELERA -------------- */
+     .cartel{
+        background-color: #f8f9fc36;
+        padding: 10px;
+        margin: 30px 50px 10 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cartel__poster h5{
+        list-style: none;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .cartel__poster img{
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .cartel__poster img:hover{
+        transform:scale(1.1);
+    }
+    .legal{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px){
+    .cartel{
+        background-color: #f8f9fc36;
+        padding: 5px;
+        margin: 30px 50px 10 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cartel__poster h5{
+        list-style: none;
+        margin: 10px 0;
+        font-size: 25px;
+    }
+    .cartel__poster h5:hover{
+        background: rgba(236, 233, 233, 0.801);
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+    .cartel__poster img{
+        width: 300px;
+        height: 380px;
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px ){
+    .bodyGeneral{
+        background-image: url(../assets/wall.jpg) ;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 70px;
+        width: auto;
+     }
+ }
