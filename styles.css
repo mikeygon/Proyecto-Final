@@ -71,14 +71,12 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     background-color: #f8f9fc36;
-    padding: 10px;
-    margin: 50px 150px 0 150px;
+    padding: 20px 80px;
+    margin: 50px 200px 0 200px;
     border-radius: 20px;
 }
 .cartel__poster{
     margin: 0 20px;
-    margin-left: 2px;
-
 }
 
 .cartel__poster h5{
@@ -86,25 +84,32 @@ header{
     margin: 18px 0;
     text-align: center;
     font-size: 13px;
+    transition: 1s all;
 }
 
 .cartel__poster h5 a{
     text-decoration: none;
-    font-family: sans-serif;
-    color: rgb(10, 2, 41);
+    font-family:cambria;
+    color: rgb(51, 49, 56);
     font-weight: bolder;
 }
 .cartel__poster h5:hover{
-    filter: blur(0.5px);
+    background: rgba(236, 233, 233, 0.801);
+    border-radius: 10px;
+    transform: scale(2);
 }
 
 .cartel__poster img{
     width: 200px;
     height: 300px;
     border-radius: 20px;
+    transition: 0.9s all;
+}
+.cartel__poster img:hover{
+    transform:scale(1.1);
 }
 
-/*Cines*/
+/*-----------------Cines----------------*/
 
 section{
     margin: auto 0;
@@ -124,7 +129,7 @@ section{
 }
 
 
-/*Pagesfilm*/
+/*------------Pagesfilm--------------*/
 
 .bodyFilm{
     background-image: url(./assets/grey.jpg);
@@ -183,14 +188,14 @@ section{
     height: 695px;
     box-shadow: 0 5px 10px 10px rgba(196, 182, 182, 0.76);
     }
-/*  Contactos */
+/* ------------- Contactos --------------*/
 .container{
    background-color: #84d4d0b0;
    height: 75vh;
    width: 65%;
 }
 
-/* Redes sociales*/
+/*------------ Redes sociales------------*/
 .redes{
     margin: 100px 0 30px 0;
     display: flex;
@@ -231,7 +236,7 @@ section{
     filter: none;
 }
 
-/* media principal */
+/*---------------- media principal------------------------- */
 @media (max-width: 992px){
     .bodyGeneral{
         background-image: url(./assets/wall\ redon.jpg) ;
@@ -253,7 +258,7 @@ section{
     .btn-check{
         display: none;
     }
-    /* CARTELERA  */
+    /*------------- CARTELERA -------------- */
      .cartel{
         background-color: #f8f9fc36;
         padding: 10px;
@@ -273,10 +278,13 @@ section{
         height: 300px;
         border-radius: 20px;
     }
+    .cartel__poster img:hover{
+        transform:scale(1.1);
+    }
     .legal{
         font-size: 13px;
     }
-    /* Film */
+    /*------- Film-------------- */
     .bodyFilm{
         width:auto;
         background-image: url(./assets/grey.jpg);
@@ -335,6 +343,11 @@ section{
         margin: 10px 0;
         font-size: 25px;
     }
+    .cartel__poster h5:hover{
+        background: rgba(236, 233, 233, 0.801);
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
     .cartel__poster img{
         width: 300px;
         height: 380px;
@@ -342,7 +355,7 @@ section{
         width: 100%;
     }
     
-  /* film */
+  /* -----------film -----------------*/
   .bodyFilm{
     width:auto;
     background-image: url(./assets/grey.jpg);
