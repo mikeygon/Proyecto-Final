@@ -9,19 +9,23 @@
     ;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    }
+    
     .cabezaFilm{
     grid-area: cabezaFilm;
     }
+
     main{
     grid-area: main;
     }
+
     aside{
-        grid-area: aside;
+     grid-area: aside;
     }
+
     .pieFilm{
     grid-area: pieFilm;
     }
+
     .film__texto{
     margin: 20px 50px 30px 20px;
     }
@@ -55,94 +59,95 @@
     height: 695px;
     box-shadow: 0 5px 10px 10px rgba(196, 182, 182, 0.76);
     }
+}
 
 @media (max-width: 992px){
-        .bodyFilm{
-            width:auto;
-            background-image: url(../assets/grey.jpg);
-            padding:100px 0;
-        }
-        .film__texto{
-            margin:10px ;
-        }
-        .film__texto h2{
-            font-family: 'Sonsie One', cursive;
-            font-size: 30px;
-            color: rgba(29, 28, 28, 0.836);
-        }
-        .film__texto p{
-            font-family: 'Nunito', sans-serif;
-            margin: 10px auto;
-        }
-        .film__texto iframe{
-            width: 400px;
-            height: 300px;
-        }
-    
-        .poster{
-            margin: 10px;
-        }
-        .poster img{
-            width: 400px;
-            height:495px;
-        }
+    .bodyFilm{
+     width:auto;
+     background-image: url(../assets/grey.jpg);
+     padding:100px 0;
+   }
+    .film__texto{
+     margin:10px ;
     }
+    .film__texto h2{
+     font-family: 'Sonsie One', cursive;
+     font-size: 30px;
+     color: rgba(29, 28, 28, 0.836);
+    }
+    .film__texto p{
+     font-family: 'Nunito', sans-serif;
+     margin: 10px auto;
+    }
+   .film__texto iframe{
+     width: 400px;
+     height: 300px;
+    }
+    
+    .poster{
+      margin: 10px;
+    }
+    .poster img{
+     width: 400px;
+     height:495px;
+    }
+}
 
 @media (max-width: 768px){
-        .bodyFilm{
-            width:auto;
-            background-image: url(../assets/grey.jpg);
-            padding:100px 0;
-        }
-        .film__texto{
-           margin:5px ;
-        }
-        .film__texto h2{
-           font-family: 'Sonsie One', cursive;
-           font-size: 25px;
-           color: rgba(29, 28, 28, 0.836);
-        }
-        .film__texto p{
-           margin: 10px auto;
-           font-size: 13px;
-        
-        }
-        .film__texto iframe{
-           width: 300px;
-           height: 200px;
-        }
-        
-        .poster{
-           margin: 10px;
-        }
-        .poster img{
-           width: 250px;
-           height:395px;
-        }
+    .bodyFilm{
+       width:auto;
+      background-image: url(../assets/grey.jpg);
+      padding:100px 0;
     }
+    .film__texto{
+       margin:5px ;
+    }
+    .film__texto h2{
+        font-family: 'Sonsie One', cursive;
+       font-size: 25px;
+       color: rgba(29, 28, 28, 0.836);
+    }
+    .film__texto p{
+       margin: 10px auto;
+       font-size: 13px;
+        
+    }
+    .film__texto iframe{
+       width: 300px;
+       height: 200px;
+    }
+        
+    .poster{
+       margin: 10px;
+    }
+    .poster img{
+       width: 250px;
+       height:395px;
+    }
+}
 
 @media (max-width: 375px ){
-        .bodyFilm{
-            width:auto;
-            background-image:linear-gradient(rgba(230, 212, 212, 0.712),rgba(173, 159, 159, 0.76)), url(./assets/Guardianes-de-la-galaxia-Vol2.jpg) ;
-            padding: 90px 10px;
-        }
-        .film__texto{
-            margin: 10px auto;
-            width: auto;
-        }
-        .film__texto h2{
-            margin-bottom: 30px;
-            font-size: 25px;
-        }
-        .film__texto p{
-            font-size: 13px;
-        }
-        .film__texto iframe{
-            width:fit-content;
-            height: fit-content;
-        }
-        aside{
-            display: none;
-        }
+    .bodyFilm{
+        width:auto;
+        background-image:linear-gradient(rgba(230, 212, 212, 0.712),rgba(173, 159, 159, 0.76)), url(./assets/Guardianes-de-la-galaxia-Vol2.jpg) ;
+        padding: 90px 10px;
+    }
+    .film__texto{
+        margin: 10px auto;
+        width: auto;
+    }
+    .film__texto h2{
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .film__texto p{
+        font-size: 13px;
+    }
+    .film__texto iframe{
+        width:fit-content;
+        height: fit-content;
+    }
+    aside{
+        display: none;
+    }
 }

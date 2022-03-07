@@ -1,113 +1,115 @@
 .bodyGeneral{
-    background-image: url(../assets/wall.jpg) ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 100px 5px 0px;
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "section section section"
-    "section section section"
-    "footer footer footer"
-    ;
-    grid-template-columns:repeat (3, 1fr);
-}
+       background-image: url(../assets/wall.jpg) ;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       padding: 100px 5px 0px;
+       display: grid;
+       grid-template-areas:
+      "header header header"
+      "section section section"
+      "section section section"
+      "footer footer footer"
+        ;
+      grid-template-columns:repeat (3, 1fr);
+    
 
- header{
-    grid-area: header;
-}
-section{
-    grid-area: section;
-}
-footer{
-    grid-area: footer;
-}
+    header{
+        grid-area: header;
+    }
+    section{
+       grid-area: section;
+    }
+    footer{
+       grid-area: footer;
+    }
+} 
+    
 .cartel{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #f8f9fc36;
-    padding: 20px 80px;
-    margin: 50px 200px 0 200px;
-    border-radius: 20px;
-}
-.cartel__poster{
-    margin: 0 20px;
-}
-
-.cartel__poster h5{
-    list-style: none;
-    margin: 18px 0;
-    text-align: center;
-    font-size: 13px;
-    transition: 1s all;
-}
-
-.cartel__poster h5 a{
-    text-decoration: none;
-    font-family:cambria;
-    color: rgb(29, 29, 31);
-    font-weight: bolder;
-}
-.cartel__poster h5:hover{
-    background: rgba(255, 255, 255, 0.521);
-    border-radius: 4px;
-    transform: scale(1.4);
-}
-
-.cartel__poster img{
-    width: 200px;
-    height: 300px;
-    border-radius: 20px;
-    transition: 0.9s all;
-}
-.cartel__poster img:hover{
-    transform:scale(1.1);
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       background-color: #f8f9fc36;
+       padding: 20px 80px;
+       margin: 50px 200px 0 200px;
+       border-radius: 20px;
+    
+    .cartel__poster{
+       margin: 0 20px;
+    }
+    .cartel__poster h5{
+       list-style: none;
+       margin: 18px 0;
+       text-align: center;
+       font-size: 13px;
+       transition: 1s all;
+    }
+    .cartel__poster h5 a{
+       text-decoration: none;
+       font-family:cambria;
+       color: $colorP;
+       font-weight: bolder;
+    }
+    .cartel__poster h5:hover{
+       background: rgba(255, 255, 255, 0.521);
+       border-radius: 4px;
+       transform: scale(1.4);
+    }
+    .cartel__poster img{
+       width: 200px;
+       height: 300px;
+       border-radius: 20px;
+       transition: 0.9s all;
+    }
+    .cartel__poster img:hover{
+       transform:scale(1.1);
+    }
 }
 /*-----------------Cines----------------*/
 
 .containerMap{
-    margin: auto 0;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
+       margin: auto 0;
+       padding: 5px;
+       display: flex;
+       justify-content: space-around;
+
+    .map{
+      margin: 10px;
+    }
+      
+   .containerMap__texto{
+      font-family: Arial, Helvetica, sans-serif;
+      color: $colorP;
+      background-color: #fbf8f1a4;
+      margin:60px 30px 60px 30px;
+      padding: 15px;
+    }
+   .cole1{
+      text-decoration: none;
+       color: red;
+    }
+    .cole2{
+       text-decoration: none;
+       color: black;
+   }
 }
 
-.map{
-    margin: 10px;
-}
-
-.containerMap__texto{
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: #fbf8f1a4;
-   margin:60px 30px 60px 30px;
-   padding: 15px;
-}
-.cole1{
-    text-decoration: none;
-    color: red;
-}
-.cole2{
-    text-decoration: none;
-    color: black;
-}
 /* ------------- Contactos --------------*/
 .container{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #84d4d0b0;
-    height: 75vh;
-    width: 65%;
+       font-family: Arial, Helvetica, sans-serif;
+       color: $colorP;
+       background-color: #84d4d0b0;
+       height: 75vh;
+       width: 65%;
  }
  
 /*------Preguntas frecuentes--------*/ 
 .askcontainer{
-    margin: 40px;
-    padding: 10px;
+       margin: 40px;
+       padding: 10px;
 }
 
 
-
-
+/* ------------MEDIAS-------*/
  @media (max-width: 992px){
     .bodyGeneral{
         background-image: url(../assets/wall.jpg) ;
@@ -118,7 +120,8 @@ footer{
         padding-top: 70px;
 
     }
-     /*------------- CARTELERA -------------- */
+
+  /*------------- CARTELERA -------------- */
      .cartel{
         background-color: #f8f9fc36;
         padding: 10px;
@@ -140,9 +143,6 @@ footer{
     }
     .cartel__poster img:hover{
         transform:scale(1.1);
-    }
-    .legal{
-        font-size: 13px;
     }
 }
 
@@ -182,5 +182,5 @@ footer{
         background-repeat: no-repeat;
         padding-top: 70px;
         width: auto;
-     }
- }
+    }
+}
