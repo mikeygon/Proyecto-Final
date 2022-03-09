@@ -1,14 +1,11 @@
 .bodyGeneral{
-       background-image: url(../assets/wall.jpg) ;
-       background-repeat: no-repeat;
-       background-attachment: fixed;
+       background-image:linear-gradient(120deg,blue, red, yellow);
        padding: 100px 5px 0px;
        display: grid;
        grid-template-areas:
-      "header header header"
+      "header header  header "
       "section section section"
-      "section section section"
-      "footer footer footer"
+      "footer footer footer "
         ;
       grid-template-columns:repeat (3, 1fr);
     
@@ -25,42 +22,42 @@
 } 
     
 .cartel{
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row;
-       background-color: #f8f9fc36;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       background-color: #f8f9fc11;
        padding: 20px 80px;
-       margin: 50px 200px 0 200px;
+       margin: 80px 200px 0 200px;
        border-radius: 20px;
     
-    .cartel__poster{
+    &__poster{
        margin: 0 20px;
     }
-    .cartel__poster h5{
+    &__poster h5{
        list-style: none;
-       margin: 18px 0;
+       margin-bottom: 30px;
+       margin-top: 15px;
        text-align: center;
        font-size: 13px;
        transition: 1s all;
     }
-    .cartel__poster h5 a{
+    &__poster h5 a{
        text-decoration: none;
        font-family:cambria;
        color: $colorP;
        font-weight: bolder;
     }
-    .cartel__poster h5:hover{
-       background: rgba(255, 255, 255, 0.521);
-       border-radius: 4px;
-       transform: scale(1.4);
+    &__poster h5:hover{
+       background: rgba(78, 78, 78, 0.233);
+       border-radius: 15px;
+       transform: scale(1.3);
     }
-    .cartel__poster img{
+    &__poster img{
        width: 200px;
        height: 300px;
        border-radius: 20px;
        transition: 0.9s all;
     }
-    .cartel__poster img:hover{
+    &__poster img:hover{
        transform:scale(1.1);
     }
 }

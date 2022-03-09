@@ -8,8 +8,8 @@ footer{
     .redes__icons{
         display: inline-block;
         margin: 0 30px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 18px;
         text-align: center;
     }
     .redes__icons a{
@@ -18,7 +18,7 @@ footer{
         background: #333;
         color: #fff;
         line-height: 50px;
-        font-size: 25px;
+        font-size: 15px;
         box-shadow: 0 1px 2px 0px rgba(5, 5, 5, 0.623);
         transition: -1s;
     }
@@ -42,11 +42,7 @@ footer{
 }
 
 @media (max-width: 375px ){
-    .redes{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-    }
+    
     .redes{
         margin: 0 auto;
         display: flex;
@@ -64,9 +60,7 @@ footer{
         line-height: 30px;
         font-size: 15px;
     }
-    .legal{
-        font-size: 10px;
-    }
+    
     .legal{
        margin: 15px 0 30px 0;
        text-align: center;
