@@ -3,10 +3,10 @@
     display: block;
   
     .containerP__pagos{
-       font-size: 50px;
+       font-size:$textLarge;
        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: $colorP;
-       background-color: #f0f8ff2f;
+       color: $colorP;
+       background-color:$colorTrans;
        border-radius: 20px;
        text-align: center;
     }
@@ -18,6 +18,6 @@
       text-align: center;
       border: 1px solid $colorP;
       border-radius: 1px;
-      background-color: aliceblue;
+      background-color: white;
     }
 }

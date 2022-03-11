@@ -1,5 +1,6 @@
 .bodyGeneral{
-       background-image:linear-gradient(120deg,blue, red, yellow);
+    @extend .containerTemplate;
+       background-image:linear-gradient(rgb(43, 9, 179),rgb(252, 64, 64) ,rgb(63, 72, 128) );
        padding: 100px 5px 0px;
        display: grid;
        grid-template-areas:
@@ -8,7 +9,7 @@
       "footer footer footer "
         ;
       grid-template-columns:repeat (3, 1fr);
-    
+
 
     header{
         grid-area: header;
@@ -19,38 +20,28 @@
     footer{
        grid-area: footer;
     }
-} 
-    
+}
+
 .cartel{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
        background-color: #f8f9fc11;
        padding: 20px 80px;
-       margin: 80px 200px 0 200px;
+       margin: 60px 50px 0 50px;
        border-radius: 20px;
-    
+
     &__poster{
        margin: 0 20px;
     }
     &__poster h5{
        list-style: none;
+       background-color: $colorTrans;
        margin-bottom: 30px;
        margin-top: 15px;
        text-align: center;
        font-size: 13px;
-       transition: 1s all;
     }
-    &__poster h5 a{
-       text-decoration: none;
-       font-family:cambria;
-       color: $colorP;
-       font-weight: bolder;
-    }
-    &__poster h5:hover{
-       background: rgba(78, 78, 78, 0.233);
-       border-radius: 15px;
-       transform: scale(1.3);
-    }
+ 
     &__poster img{
        width: 200px;
        height: 300px;
@@ -72,9 +63,9 @@
     .map{
       margin: 10px;
     }
-      
+
    .containerMap__texto{
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:  $fontBase;
       color: $colorP;
       background-color: #fbf8f1a4;
       margin:60px 30px 60px 30px;
@@ -92,17 +83,25 @@
 
 /* ------------- Contactos --------------*/
 .container{
-       font-family: Arial, Helvetica, sans-serif;
+       font-size: $textLarge;
+       font-family: $fontBase;
        color: $colorP;
-       background-color: #84d4d0b0;
+       background-color:$colorTrans;
        height: 75vh;
        width: 65%;
- }
- 
-/*------Preguntas frecuentes--------*/ 
+}
+
+/*------Preguntas frecuentes--------*/
 .askcontainer{
        margin: 40px;
        padding: 10px;
+    .accordion-button{
+       font-size: $texBase;
+       font-family: $fontBase;
+    }
+    .accordion-body{
+        font-family: $fontBase;
+    }
 }
 
 

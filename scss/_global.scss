@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.containerTemplate{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@mixin title($titleFilm) {
+    size: 20px $titleFilm;
+    padding: 1rem;
+}

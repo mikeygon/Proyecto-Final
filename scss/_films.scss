@@ -9,7 +9,7 @@
     ;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
+
     .cabezaFilm{
     grid-area: cabezaFilm;
     }
@@ -23,22 +23,25 @@
     }
 
     .pieFilm{
-    grid-area: pieFilm;
+       grid-area: pieFilm;
     }
 
-    .film__texto{
-    margin: 20px 50px 30px 20px;
+   .film__texto{
+        margin: 20px 50px 30px 20px;
     }
 
     .film__texto h2{
-    font-family: 'Sonsie One', cursive;
-    font-size: 50px;
-    color: rgba(29, 28, 28, 0.836);
+       font-family: 'Sonsie One', cursive;
+    //    font-size: $textLarge;
+       color: rgba(29, 28, 28, 0.836);
+       @include title(500px);
     }
 
     .film__texto p{
-    font-family: 'Nunito', sans-serif;
-    margin: 20px 10px 10px 10px;
+        background-color: $colorTrans;
+        padding: 10px 5px;
+        font-family:$fontBase;
+        margin: 20px 10px 10px 10px;
     }
 
     .film__texto iframe{
@@ -71,19 +74,19 @@
      margin:10px ;
     }
     .film__texto h2{
-     font-family: 'Sonsie One', cursive;
-     font-size: 30px;
+     font-family: $fontBase;
+     font-size:$texBase;
      color: rgba(29, 28, 28, 0.836);
     }
     .film__texto p{
-     font-family: 'Nunito', sans-serif;
+     font-family: $fontBase;
      margin: 10px auto;
     }
    .film__texto iframe{
      width: 400px;
      height: 300px;
     }
-    
+
     .poster{
       margin: 10px;
     }
@@ -103,20 +106,20 @@
        margin:5px ;
     }
     .film__texto h2{
-        font-family: 'Sonsie One', cursive;
-       font-size: 25px;
+        font-family:$fontBase;
+       font-size: $texBase;
        color: rgba(29, 28, 28, 0.836);
     }
     .film__texto p{
        margin: 10px auto;
        font-size: 13px;
-        
+
     }
     .film__texto iframe{
        width: 300px;
        height: 200px;
     }
-        
+
     .poster{
        margin: 10px;
     }
@@ -138,7 +141,7 @@
     }
     .film__texto h2{
         margin-bottom: 30px;
-        font-size: 25px;
+        font-size:$texBase;
     }
     .film__texto p{
         font-size: 13px;
