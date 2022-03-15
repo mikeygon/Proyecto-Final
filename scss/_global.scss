@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
 }
-.containerTemplate{
+.containerGeneral{
     max-width: 1000px;
     margin: 0 auto;
 }
 
-@mixin title($titleFilm) {
-    size: 20px $titleFilm;
+@mixin title($width) {
+    font-size: $texBase;
     padding: 1rem;
+    background-color: $colorTrans;
+    border-radius: 120px;
+    width: auto;
 }

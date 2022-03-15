@@ -1,5 +1,5 @@
 .bodyGeneral{
-    @extend .containerTemplate;
+    @extend .containerGeneral;
        background-image:linear-gradient(rgb(43, 9, 179),rgb(252, 64, 64) ,rgb(63, 72, 128) );
        padding: 100px 5px 0px;
        display: grid;
@@ -96,11 +96,13 @@
        margin: 40px;
        padding: 10px;
     .accordion-button{
-       font-size: $texBase;
+       font-size: $textMin;
        font-family: $fontBase;
     }
     .accordion-body{
         font-family: $fontBase;
+        background-color: $colorTrans;
+        font-size: $textMin;
     }
 }
 
@@ -108,10 +110,6 @@
 /* ------------MEDIAS-------*/
  @media (max-width: 992px){
     .bodyGeneral{
-        background-image: url(../assets/wall.jpg) ;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
         width: auto;
         padding-top: 70px;
 
@@ -155,7 +153,7 @@
     .cartel__poster h5{
         list-style: none;
         margin: 10px 0;
-        font-size: 25px;
+        font-size:$textMin;
     }
     .cartel__poster h5:hover{
         background: rgba(236, 233, 233, 0.801);
@@ -172,11 +170,10 @@
 
 @media (max-width: 375px ){
     .bodyGeneral{
-        background-image: url(../assets/wall.jpg) ;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
         padding-top: 70px;
         width: auto;
+    }
+    .cartel__poster h5{
+        font-size:$textMin;
     }
 }

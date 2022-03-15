@@ -1,0 +1,20 @@
+// $mapRedes:(facebook:blue, instagram:rgb(255, 0, 221), twitter:rgb(0, 225, 255));
+
+// @each $i, $valor in $mapRedes {
+//     .#{$i}{
+//         color: $valor;
+//     }
+    
+// }
+
+$mapText:(
+    h1:5rem,
+    h2:4rem,
+    h3:3rem,
+    h4:2rem,
+     );
+@each $i, $text in $mapText{
+    #{$i}{
+        font-size: $text;
+    }
+}

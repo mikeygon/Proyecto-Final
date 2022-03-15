@@ -32,9 +32,9 @@
 
     .film__texto h2{
        font-family: 'Sonsie One', cursive;
-    //    font-size: $textLarge;
+       font-size: $textLarge;
        color: rgba(29, 28, 28, 0.836);
-       @include title(500px);
+       @include title(auto);
     }
 
     .film__texto p{
@@ -45,10 +45,10 @@
     }
 
     .film__texto iframe{
-    margin-top: 40px;
-    padding: 1px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px;
+       margin-top: 40px;
+       padding: 1px;
+       border-radius: 20px;
+       box-shadow: 5px 5px 10px;
     }
 
     .poster{
@@ -128,11 +128,35 @@
        height:395px;
     }
 }
-
+@media (max-width: 576px ){
+    .bodyFilm{
+        width:auto;
+        padding: 90px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .film__texto{
+        margin: 10px auto;
+        width: auto;
+    }
+    .film__texto h2{
+        margin-bottom: 30px;
+        font-size:$texBase;
+    }
+    .film__texto p{
+        font-size: 13px;
+    }
+    .film__texto iframe{
+        width:fit-content;
+        height: fit-content;
+    }
+    aside{
+        display: none;
+    }
+}
 @media (max-width: 375px ){
     .bodyFilm{
         width:auto;
-        background-image:linear-gradient(rgba(230, 212, 212, 0.712),rgba(173, 159, 159, 0.76)), url(./assets/Guardianes-de-la-galaxia-Vol2.jpg) ;
         padding: 90px 10px;
     }
     .film__texto{
