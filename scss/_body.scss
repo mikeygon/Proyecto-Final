@@ -52,59 +52,46 @@
        transform:scale(1.1);
     }
 }
-/*-----------------Cines----------------*/
 
-.containerMap{
-       margin: auto 0;
-       padding: 5px;
-       display: flex;
-       justify-content: space-around;
 
-    .map{
-      margin: 10px;
-    }
-
-   .containerMap__texto{
-      font-family:  $fontBase;
-      color: $colorP;
-      background-color: #fbf8f1a4;
-      margin:60px 30px 60px 30px;
-      padding: 15px;
-    }
-   .cole1{
-      text-decoration: none;
-       color: red;
-    }
-    .cole2{
-       text-decoration: none;
-       color: black;
-   }
-}
 
 /* ------------- Contactos --------------*/
+.titulo{
+    margin: 2rem 1rem;
+    width: auto;
+    padding: 5px 15px;
+    box-shadow: $shadow;
+    background: linear-gradient(
+    to left top,
+    rgba(106, 31, 121, 0.418),
+    rgba(31, 68, 110, 0.678)
+    );
+    color: rgb(255, 249, 249);
+    border-radius: 2px;
+}
+
 .container{
        font-size: $textLarge;
        font-family: $fontBase;
        color: $colorP;
-       background-color:$colorTrans;
-       height: 75vh;
-       width: 65%;
 }
+
 
 /*------Preguntas frecuentes--------*/
 .askcontainer{
-       margin: 40px;
+       margin: 1rem 3rem;
        padding: 10px;
     .accordion-button{
        font-size: $textMin;
        font-family: $fontBase;
-    }
+    }   
     .accordion-body{
         font-family: $fontBase;
         background-color: $colorTrans;
         font-size: $textMin;
     }
 }
+
 
 
 /* ------------MEDIAS-------*/
@@ -116,7 +103,7 @@
     }
 
   /*------------- CARTELERA -------------- */
-     .cartel{
+    .cartel{
         background-color: #f8f9fc36;
         padding: 10px;
         margin: 30px 50px 10 50px;
@@ -124,19 +111,20 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    .cartel__poster h5{
+    
+    &__poster h5{
         list-style: none;
         margin: 10px 0;
         text-align: center;
     }
-    .cartel__poster img{
+    &__poster img{
         width: 200px;
         height: 300px;
         border-radius: 20px;
     }
-    .cartel__poster img:hover{
+    &__poster img:hover{
         transform:scale(1.1);
+    }
     }
 }
 
@@ -168,12 +156,18 @@
     }
 }
 
-@media (max-width: 375px ){
+@media (max-width: 375px){
     .bodyGeneral{
         padding-top: 70px;
         width: auto;
     }
     .cartel__poster h5{
         font-size:$textMin;
+    }
+    .cartel__poster img{
+        width: 220px;
+        height: 280px;
+        border-radius: 20px;
+        width: 100%;
     }
 }

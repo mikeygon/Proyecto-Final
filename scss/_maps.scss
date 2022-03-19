@@ -8,10 +8,9 @@
 // }
 
 $mapText:(
-    h1:5rem,
-    h2:4rem,
-    h3:3rem,
-    h4:2rem,
+    h1:2rem,
+    h2:1rem,
+    h3:1rem,
      );
 @each $i, $text in $mapText{
     #{$i}{
