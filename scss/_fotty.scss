@@ -1,18 +1,49 @@
 footer{
-        border-top: 0.5px solid;
+        display:grid;
+        grid-template-areas: 
+        "cLeft container-center container-right"
+        "legal legal legal"   ;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: .5px solid ;
         margin-top: 40px;
-        width: 100%;
- 
+    .cLeft{
+          grid-area: cLeft;
+    
+        &__item {
+            list-style: none;
+        }
+        &__item li a{
+            text-decoration: none;
+            color: rgba(127, 127, 128, 0.842);
+        }
+        &__item li a:hover {
+            color: #fff;
+        }
+
+    }
+    .container-center{
+        grid-area: container-center;
+
+        p{
+            color: rgba(127, 127, 128, 0.842);
+        }
+    }
+    .container-right{
+        grid-area: container-right;
+    }
+    .legal{
+        grid-area: legal;
+    }
     .redes{
-        margin:50px 0 ;
         display: flex;
-        justify-content: center;
+        justify-content:space-around;
+        
     }
     .redes__icons {
         display: inline-block;
-        margin: 0 30px;
-        width: 40px;
-        height: 18px;
+        margin: 50px 20px 0; 
+        width: 30px;
+        height: 12px;
         text-align: center;
     }
     .redes__icons a{
@@ -20,7 +51,7 @@ footer{
         padding: 0 8px;
         background: #333;
         color: #fff;
-        line-height: 50px;
+        line-height: 30px;
         font-size: 15px;
         box-shadow: 0 1px 2px 0px rgba(5, 5, 5, 0.623);
         transition: -1s;
@@ -47,47 +78,57 @@ footer{
         background:#55acee ;
     }
     .redes ul li a:hover{
-        border-radius: 10px;
+        border-radius: 5px;
         transform: translateY(-2px) scale(1.05);
         box-shadow: 0 3px 4px 0px rgba(0, 0, 0, .3);
         filter: none;
     }
 }
 
-@media (max-width: 375px ){
-    
-    .redes{
-        margin: 0 auto;
+@media (max-width: 765px ){
+    footer{
+        background-color:rgba(141, 141, 141, 0.055);
         display: flex;
-        justify-content: center;
-    }
-    .redes__icons{
-        display: inline-block;
-        margin: 0 30px;
-        width: 30px;
-        height: 30px;
+        flex-direction: column;
         text-align: center;
+        margin: 20px 10px;
+        padding: 10px 5px;
     }
-    .redes__icons a{
-        padding: 0 2px;
-        line-height: 30px;
-        font-size: 15px;
-    }
+}
+ @media (max-width: 375px ){
     
-    .legal{
-       margin: 15px 0 30px 0;
+     .redes{
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+   }
+   .redes__icons{
+       display: inline-block;
+       margin: 0 10px;
+       width: 30px;
+       height: 30px;
        text-align: center;
-       font-family:monospace;
-       font-weight: bold;
-       font-size: 20px;
-       color: #FBF8F1;
-    }
-    .redes ul:hover a{
-    filter: blur(3px);
-    }
-    .redes ul li a:hover{
-       transform: translateY(-2px) scale(1.05);
-       box-shadow: 0 3px 4px 0px rgba(0, 0, 0, .3);
-       filter: none;
-    }
+   }
+   .redes__icons a{
+       padding: 0 2px;
+       line-height: 30px;
+       font-size: 15px;
+   }
+    
+   .legal{
+      margin: 15px 0 30px 0;
+      text-align: center;
+      font-family:monospace;
+      font-weight: bold;
+      font-size: 20px;
+      color: #FBF8F1;
+   }
+   .redes ul:hover a{
+   filter: blur(3px);
+   }
+   .redes ul li a:hover{
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 3px 4px 0px rgba(0, 0, 0, .3);
+      filter: none;
+   }
 }

@@ -1,7 +1,7 @@
 .bodyGeneral{
     @extend .containerGeneral;
-       background-image:linear-gradient(rgb(43, 9, 179),rgb(252, 64, 64) ,rgb(63, 72, 128) );
-       padding: 100px 5px 0px;
+       background-image:linear-gradient(rgb(67, 49, 138),rgb(70, 103, 151) ,rgb(43, 49, 90));
+       margin-top: 80px;
        display: grid;
        grid-template-areas:
       "header header  header "
@@ -40,6 +40,7 @@
        margin-top: 15px;
        text-align: center;
        font-size: 13px;
+       border-radius: 4px;
     }
  
     &__poster img{
