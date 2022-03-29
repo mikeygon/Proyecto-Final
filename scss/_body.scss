@@ -22,7 +22,7 @@
     }
 }
 
-/*-----------carrusel de prueba---------*/
+/*-----------carrusel---------*/
  .carrusel{
      width: 100%;
      margin-top: 30px;
@@ -136,6 +136,19 @@
         padding-top: 70px;
 
     }
+    .carrusel{
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 20px;
+        position: relative;
+   }
+    .d-block{
+        margin-left: 120px;
+        width: 650px;
+        height:450px;
+        border-radius: 1rem;
+        box-shadow: $shadow;
+    }
 
   /*------------- CARTELERA -------------- */
     .cartel{
@@ -173,6 +186,18 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .carrusel{
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 10px;
+   }
+    .d-block{
+        margin-left: 35px;
+        width: 650px;
+        height:450px;
+        border-radius: 1rem;
+        box-shadow: $shadow;
+    }
     .cartel__poster h5{
         list-style: none;
         margin: 10px 0;
@@ -195,6 +220,21 @@
     .bodyGeneral{
         padding-top: 70px;
         width: auto;
+    }
+    .carrusel{
+        width: 95%;
+        margin-top: 10px;
+        margin-left: 10px;
+   }
+    .d-block{
+        margin-left: 20px;
+        width: 300px;
+        height:250px;
+        border-radius: 1rem;
+        box-shadow: $shadow;
+    }
+    .cartel{
+        margin-top:50px;
     }
     .cartel__poster h5{
         font-size:$textMin;

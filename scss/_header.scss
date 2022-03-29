@@ -6,7 +6,6 @@ header{
       width: 100%;
       top: 0;
       left: 0;
-    
     .btn-check{
       color: white;
       background: none;
@@ -39,9 +38,14 @@ header{
 @media (max-width: 992px){
     .navbar-nav{
       background-color: $colorDark ;
-      margin-top: 11px;
+      margin-top: 15px;
       text-align: center;
-      border-radius: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size:20px;
+
     }
 
     .logo{
@@ -76,13 +80,6 @@ header{
        top: 0;
        left: 0;
     }
-    .menu{
-      height:60px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
     .logo{
        margin-left: 10px;
        font-size: 20px;
@@ -97,45 +94,17 @@ header{
       margin-right: 20px;
       cursor: pointer;
     }
-    .menu__item{
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       align-items: center;
-       position: fixed;
-       width: 100%;
-       height:0vh;
-       top: 60px;
-       background: rgba(0, 0, 0, .90);
-       text-align: center;
-       transition: all .5s;
+    .navbar-nav{
+      background-color: $colorDark ;
+      margin-top: 15px;
+      text-align: center;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .menu__item li{
-       display:none;
-       line-height: 30px;
-       margin: 50px;
-       transition: all .5s;
+    .carrusel{
+      display: none;
     }
-    .menu__item li a{
-       color: white;
-      font-size: 15px;
-      text-transform: uppercase;
-      font-weight: 100px;
-      text-decoration: none;
-     }
-    .menu__item li a:hover,
-    .menu__item_active {
-       background-color: #034574;
-       transition:0.5s;
-      border-radius: 10px;
-    }
-    #check{
-      display:none;
-    }
-    #check:checked ~ .menu__item{
-       height: 65vh;
-    }
-    #check:checked ~ .menu__item li{
-        display: block;
-    }
+
 }
