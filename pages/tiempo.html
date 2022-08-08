@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/79ebb29570.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../css/style.min.css" />
+</head>
+<body  onload="onLoad()">
+
+    <section class="contenedor-principal" >
+        <div class="animado-grande" >
+            <img src="" alt="" id="iconoAnimado" >
+        </div>
+        <div class="grados" >
+            <div id="temperature"></div>
+        </div>
+       
+        <div class="maxima">
+            <div id="tempMin"></div>
+            <div id="tempMax"></div>
+        </div>
+        <div class="date">
+        <div id="date"></div>
+    </div>
+    <div class="location">
+        <div id="location"></div>
+    </div>
+    </section>
+
+    <main>
+     <div  class="portareloj">
+       <span class="hora"></span>
+     </div>
+     <div class="cambio">
+        <button class="switch" id="switch">
+         <span><f class="fas fa-sun"></f></span>
+         <span><f class="fas fa-moon"></f></span>
+        </button>
+     </div>
+    <div  class="contenedor-main">    
+        <div class="viento"> 
+            <h3>Viento</h3>
+            <div id="wind"></div>
+            <img src="../amcharts_weather_icons_1.0.0/animated/wind-solid.svg" width="30px" class="img-viento" alt="">
+        </div>
+   
+        <div class="humedad"> 
+            <h3>Humedad</h3>
+            <div id="humidity"></div>
+            <img src="../amcharts_weather_icons_1.0.0/animated/humidity.png" width="30px" class="img-humed" alt="">
+        </div>
+   
+        <div class="pronga">
+            <h3>Cielo</h3>
+            <div id="description"></div>
+            <div id="icon"></div>
+        </div>
+
+    </div>
+    <div class="prono-fut">
+        <div class="cov1">
+            <h3 id="d-1"></h3>
+        <div id="tiemp1" class="tiempo1"></div>
+        <img src="" alt="foto" id="icono1">
+    </div>
+    <div class="cov2">
+        <h3 id="d-2"></h3>
+        <div id="tiemp2" class="tiempo2"></div>
+        <img src="" alt="foto" id="icono2">
+    </div>
+    <div class="cov3">
+        <h3 id="d-3"></h3>
+        <div id="tiemp3" class="tiempo3"></div>
+        <img src="" alt="foto" id="icono3">
+    </div>
+    </div>
+    </main> 
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script src="../Javascript/Weather/app.js"></script>
+</body>
+</html>
