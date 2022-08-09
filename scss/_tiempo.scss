@@ -7,8 +7,10 @@ body{
     display: grid;
     height: 100%;
     width: 100%;
-    background: #9be1e5;
+    background: #000000af;
     transition: .4s ease all;
+    margin-top: 60px;
+    max-width:2000px;
     grid-template-areas:
      "section main" 
      "section main"
@@ -198,7 +200,7 @@ body.dark .pronga{
     align-content: center;
     background: #06223bd2;
     color: rgba(204, 207, 226, 0.822);
-    height: 2%;
+    height: 10%;
     padding: 30px;
     font-weight: bold;
     font-size: 30px;
@@ -236,7 +238,7 @@ body.dark .pronga{
     background:#343d58;
     border-radius: 1000px;
     border: none;
-    position: relative;
+    position:relative;
     cursor: pointer;
     display: flex;
     outline: none;
