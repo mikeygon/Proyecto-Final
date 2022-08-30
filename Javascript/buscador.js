@@ -29,3 +29,4 @@ const filtrar = ()=>{
 
 boton.addEventListener('click', filtrar)
 formulario.addEventListener('keyup',filtrar)
+
