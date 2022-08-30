@@ -3,7 +3,7 @@
     margin: 0;
     box-shadow: 0;
 }
-body{
+.body-time{
     display: grid;
     height: 100%;
     width: 100%;
@@ -18,7 +18,7 @@ body{
      grid-template-rows:repeat(2, 3fr);
      grid-template-columns:500px 1fr;
 }
-body.dark{
+.body-time.dark{
     background: rgb(81, 129, 138);
 }
 
@@ -27,7 +27,7 @@ body > section{
      background-color: rgb(30, 35, 65);  
      transition: .4s ease all;
 }
-body.dark section {
+.body-time.dark section {
     background: rgb(254, 255, 255);
 }
 
@@ -36,7 +36,7 @@ body > main{
      background-color: rgb(8, 25, 41); 
      transition: .4s ease all;
 }
-body.dark main{
+.body-time.dark main{
     background: rgb(176, 239, 250);
 }
 body > footer{
@@ -83,7 +83,7 @@ body > footer{
     box-shadow: 3px 10px 8px rgba(20, 19, 19, 0.829);
     transition: all .4s ease;
 }
-body.dark .grados{
+.body-time.dark, .grados{
     color: rgba(0, 0, 0, 0.712);
     background: #4eaeee;
 }
@@ -128,7 +128,7 @@ body.dark .grados{
     margin: 15px 180px;
     box-shadow: 1px 1px 2px 1px rgba(20, 19, 19, 0.521);
 }
-body.dark .location{
+.body-time.dark .location{
     background: #2b2f3dfa;
     color: #9be1e5;
     border-radius: 10px;
@@ -155,15 +155,15 @@ body.dark .location{
     box-shadow: 3px 12px 9px rgba(20, 19, 19, 0.822);
     transition: .4s ease all;
 }
-body.dark .viento{
+.body-time.dark .viento{
     background: #24a3f7;
     color: #000;
 }
-body.dark .humedad{
+.body-time.dark .humedad{
     background: #24a3f7;
     color: #000;
 }
-body.dark .pronga{
+.body-time.dark .pronga{
     background: #24a3f7;
     color: #000;
 }
@@ -180,7 +180,7 @@ body.dark .pronga{
     background-color: rgb(10, 12, 29); 
     transition: .4s ease all;
  }
- body.dark .prono-fut{
+ .body-time.dark .prono-fut{
     background: #fff;
     color: #000;
  }

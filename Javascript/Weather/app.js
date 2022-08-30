@@ -36,7 +36,7 @@
              break;
          case 'Cloudy':
              iconoAnimado.src = '/amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg'
-             console.log('NUBLADO')
+             console.log('NUBLAD')
              break;
          case 'Smoke':
              iconoAnimado.src = '/amcharts_weather_icons_1.0.0/animated/night.svg'
