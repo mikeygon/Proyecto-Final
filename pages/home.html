@@ -26,6 +26,8 @@
               <i class="fa-solid fa-bars"></i></label>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
+                <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button> 
+
               <a class="search" href="../pages/resultado.html"><img src="../assets/search_FILL0_wght200_GRAD-25_opsz24.svg" alt=""></a>
                 <li class="nav-item">
                   <a class="nav-link " aria-current="page" href="../index.html">Cartelera</a>
@@ -48,15 +50,30 @@
         </nav>
       </header>
      <section class="main">
-   
+ <!--Contenedor de los productos   -->
     <section class="contenedor" id="container">
-
+<!-- Imagenes Light -->
     </section>
     <section class="imagen-light">
         <img src="../assets/bx-x.svg" alt="" class="close">
         <img src="" alt="" class="agregar-imagen">
+        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+
       </section>
     </section> 
+<!-- Modal de carrito -->
+    <div class="modal-contenedor">
+      <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+          <div id="carrito-contenedor">
+         
+          </div>
+          <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+          <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+          <button id="finalizar-compra" class="finalizar">Finalizar Compra</button>
+      </div>
+  </div>
 
     <footer>
         <div>
@@ -66,7 +83,9 @@
         </div>
     </footer>
     <script src="../Javascript/stock.js"></script>
+    <script src="../Javascript/modal.js"></script>
     <script src="../Javascript/app.js"></script>
     <script src="../Javascript/light.js"></script>
+    
 </body>
 </html>
