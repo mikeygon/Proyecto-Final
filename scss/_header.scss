@@ -70,41 +70,82 @@ header{
         text-decoration: none;
         color: #FBF8F1;
      }
+     .navbar-nav{
+      background-color: rgba(60, 75, 83, 0.89);
+      border-radius: 20px;
+     }
+  
 }
-
-@media (max-width: 375px ){
-   header{
-       background-color: #02141dc4;
-       height: 60px;
-       width: 100%;
-       top: 0;
-       left: 0;
-    }
-    .logo{
-       margin-left: 10px;
-       font-size: 20px;
-       font-weight: bold;
-       padding: 0 20px;
-       line-height: 80px;
-    }
-    .btn-check{
-       display: block;
-      color: white;
+@media (max-width: 425px ){
+  header{
+      background-color: #02141dc4;
+      height: 60px;
+      width: 100%;
+      top: 0;
+      left: 0;
+   }
+   .logo{
+      margin-left: 10px;
       font-size: 20px;
-      margin-right: 20px;
-      cursor: pointer;
-    }
-    .navbar-nav{
-      background-color: $colorDark ;
-      margin-top: 15px;
-      text-align: center;
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .carrusel{
-      display: none;
-    }
+      font-weight: bold;
+      padding: 0 20px;
+      line-height: 80px;
+   }
+   .btn-check{
+      display: block;
+     color: rgb(10, 6, 6);
+     font-size: 30px;
+     margin-right: 20px;
+     cursor: pointer;
+   }
+   .navbar-nav{
+     background-color: rgba(103, 114, 121, 0.89);
+     margin-top: 20px;
+     text-align: center;
+     border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
+   .carrusel{
+     display: none;
+   }
 
 }
+
+// @media (max-width: 375px ){
+//    header{
+//        background-color: #02141dc4;
+//        height: 60px;
+//        width: 100%;
+//        top: 0;
+//        left: 0;
+//     }
+//     .logo{
+//        margin-left: 10px;
+//        font-size: 20px;
+//        font-weight: bold;
+//        padding: 0 20px;
+//        line-height: 80px;
+//     }
+//     .btn-check{
+//        display: block;
+//       color: white;
+//       font-size: 20px;
+//       margin-right: 20px;
+//       cursor: pointer;
+//     }
+//     .navbar-nav{
+//       background-color: $colorDark ;
+//       margin-top: 15px;
+//       text-align: center;
+//       border-radius: 15px;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//     }
+//     .carrusel{
+//       display: none;
+//     }
+
+// }
