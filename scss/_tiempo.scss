@@ -3,6 +3,7 @@
     margin: 0;
     box-shadow: 0;
 }
+@media(max-width: 996px){
 
 .body-time{
 
@@ -288,6 +289,7 @@ body > footer{
     display: block;
     background: none;
     color: #fff;
+}
 }
 @media (max-width: 375px){
  .body-time{
