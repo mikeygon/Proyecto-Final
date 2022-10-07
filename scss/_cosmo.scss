@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.back-boy{
+    background: #020b13;
+    overflow-y: scroll;
+    min-height: 1500px;
+ }
+.nav-cosmo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background:linear-gradient( rgb(14, 17, 39), rgb(66, 1, 71));
+    font-size: 20px;
+    font-family: 'Rubik Dirt', cursive;
+
+}
+.logo-cosmo{
+    margin-left: 50px;
+}
+.logo-cosmo a, .na-link{
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+}
+.nav_container ul{
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+
+}
+.na-link{
+    margin-left: 40px;
+
+}
+.na-link li{
+    color: antiquewhite;
+    transition: all ease-out .5s;
+}
+.conti-items{
+    padding: 10px;
+ }
+
+ .na-link li:hover{
+     background: rgba(254, 255, 255, 0.589);
+     border-radius: 8px;
+     color: #020b13;
+ }
+
+section{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #020b13, transparent);
+    z-index: 10000;
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #c7d6e069, transparent);
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+.planetcontainer{
+    display: flex;
+    flex-direction: row;
+}
+#galaxy{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#blueplanet{
+    position:fixed;
+    top: 250px;
+    right: 210px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    pointer-events: none;
+}
+#redplanet{
+    position:absolute;
+    top:100px;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    pointer-events: none;
+}
+// #lava{
+//     position: absolute;
+//     top: 100px;
+//     right: 300px;
+//     width: 100px;
+//     height: 100px;
+//     object-fit: cover;
+//     pointer-events: none;
+// }
+#astro{
+    position: absolute;
+    bottom: 80px;
+    left: 300px;
+    width: 220px;
+    height: 450px;
+    pointer-events: none;
+}
+
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+}
+.descripcion div{
+    margin:5px;
+    padding:5px 70px;
+    color: antiquewhite;
+}
+

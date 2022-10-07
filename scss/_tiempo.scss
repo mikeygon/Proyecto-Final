@@ -20,7 +20,7 @@ body.dark{
     background: rgb(81, 129, 138);
 }
 
-body > section{
+.body_time > section{
     grid-area: section;
      background-color: rgb(30, 35, 65);  
      transition: .4s ease all;
@@ -29,7 +29,7 @@ body > section{
     background: rgb(254, 255, 255);
 }
 
-body > main{
+.body_time > main{
     grid-area: main;
      background-color: rgb(8, 25, 41); 
      transition: .4s ease all;

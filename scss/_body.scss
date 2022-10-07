@@ -1,84 +1,4 @@
-.bodyGeneral{
-    @extend .containerGeneral;
-       background-image:linear-gradient(rgb(67, 49, 138),rgb(70, 103, 151) ,rgb(43, 49, 90));
-       margin-top: 60px;
-       display: grid;
-       grid-template-areas:
-      "header header  header "
-      "section section section"
-      "footer footer footer "
-        ;
-      grid-template-columns:repeat (3, 1fr);
 
-
-    header{
-        grid-area: header;
-    }
-    section{
-       grid-area: section;
-    }
-    footer{
-       grid-area: footer;
-    }
-}
-
-/*-----------carrusel---------*/
- .carrusel{
-     width: 100%;
-     margin-top: 30px;
-     margin-left: 20px;
-}
- .d-block{
-     margin-left: 100px;
-     width: 800px;
-     height:400px;
-     border-radius: 1rem;
-     box-shadow: $shadow;
- 
- }
- .carousel-item{
-     text-align: center;
-     background: rgba(41, 43, 44, 0.13);
- }
- .carousel-item p{
-     color: $colorlight;
-     background-color: $colorP;
- }
-
-
-
-/*-------------- Cartel---------*/
-.cartel{
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       background-color: #f8f9fc11;
-       padding: 20px 80px;
-       margin: 560px 50px 0 50px;
-       border-radius: 20px;
-
-    &__poster{
-       margin: 0 20px;
-    }
-    &__poster h5{
-       list-style: none;
-       background-color: $colorTrans;
-       margin-bottom: 30px;
-       margin-top: 15px;
-       text-align: center;
-       font-size: 13px;
-       border-radius: 4px;
-    }
-
-    &__poster img{
-       width: 200px;
-       height: 300px;
-       border-radius: 20px;
-       transition: 0.9s all;
-    }
-    &__poster img:hover{
-       transform:scale(1.1);
-    }
-}
 
 
 
@@ -104,30 +24,6 @@
 }
 
 
-/*------Preguntas frecuentes--------*/
-.askcontainer{
-       margin: 1rem 3rem;
-       padding: 10px;
-    .accordion-button{
-       font-size: $textMin;
-       font-family: $fontBase;
-    }
-    .accordion-body{
-        font-family: $fontBase;
-        background-color: $colorTrans;
-        font-size: $textMin;
-    }
-}
-
-/*------Politicas de Privacidad--------*/
-
-.p-v{
-    color: black;
-    padding: 5px;
-    text-align: start;
-    background-color: $colorTrans;
-    border-radius: 5px;
-}
 
 /* ------------MEDIAS-------*/
  @media (max-width: 992px){
