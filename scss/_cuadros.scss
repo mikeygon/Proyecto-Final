@@ -190,20 +190,22 @@ h3{
 }
 
 //----- Carrito__-------///
-
-#boton-carrito {
-    border: none;
+#contenedor-carrito{
     color: rgba(53, 42, 121, 0.87);
-    font-size: 20px;
-    background-color: rgba(203, 201, 212, 0.733);
     border-radius: 50%;
-    padding: 10px 20px;
-    transition: all .6s;
+    transition: all 1s;
 }
-#boton-carrito:hover {
+#boton-carrito {
+    position: absolute;
+    border: none;
+    background-color: rgba(35, 46, 46, 0.082);
+    color: rgba(255, 255, 255, 0.87);
+    padding: 10px 20px;
+    transition: all 1s;
+}
+#contenedor-carrito:hover {
     cursor: pointer;
     color: rgb(240, 240, 240);
-    background-color: rgba(5, 2, 24, 0.705);
     font-size: 13px;
 }
 #boton-carrito:focus {
@@ -212,9 +214,9 @@ h3{
 .boton-agregar {
     background-color: rgb(44, 59, 110);
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
-    padding: 5px;
+    padding:1px;
     border-radius: 9px;
     border: none;
     transition: all .2s;
@@ -233,6 +235,7 @@ h3{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +251,8 @@ h3{
 
 .modal-carrito {
     position: relative;
-    background-color: white;
+    background-color:rgb(224, 224, 224);
+    border-radius: 20px;
     min-width: 500px;
     padding: 20px;
     margin-top: -100%;
@@ -278,6 +282,9 @@ h3{
 .modal-carrito #carritoCerrar:focus {
     outline: none;
 }
+.precioProducto{
+        font-family: 'Rubik Dirt', cursive;
+}
 .modal-carrito .precioProducto {
     padding-top: 10px;
 }
@@ -288,6 +295,12 @@ h3{
     border: none;
     border-radius: 9px;
     color: rgb(255, 255, 255);
+    transition: all .2s;
+
+}
+.finalizar:hover{
+    cursor: pointer;
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .productoEnCarrito {

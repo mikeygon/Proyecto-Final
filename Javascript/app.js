@@ -1,5 +1,4 @@
 const contenedorProductos = document.getElementById('container')
-const formulario = document.querySelector('#formulario');
 const boton = document.querySelector('#boton');
 const resultado = document.querySelector('.resultado')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -123,9 +122,12 @@ document.addEventListener('DOMContentLoaded', () => {
  
      botonFinalizar.addEventListener('click', ()=>{
          contenedorModal.classList.toggle('modal-active')
- 
      })
-    
+     botonFinalizar.addEventListener('click', () => {
+        carrito.length = 0
+        actualizarCarrito()
+     })
+   
   }
 
 

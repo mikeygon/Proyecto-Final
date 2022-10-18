@@ -50,7 +50,7 @@
      color: #020b13;
  }
 
-section{
+.contenedor-cosmo {
     position:relative;
     width: 100%;
     height: 100vh;
@@ -59,7 +59,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-section:before{
+.contenedor-cosmo:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -68,7 +68,7 @@ section:before{
     background: linear-gradient(to top, #020b13, transparent);
     z-index: 10000;
 }
-section:after{
+.contenedor-cosmo:after{
     content: '';
     position: absolute;
     top: 0;
@@ -133,8 +133,10 @@ section:after{
 .descripcion{
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
 }
 .descripcion div{
+   position: relative;
     margin:5px;
     padding:5px 70px;
     color: antiquewhite;

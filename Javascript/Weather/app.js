@@ -215,25 +215,25 @@
      navigator.geolocation.getCurrentPosition(fetchData);
 }
 
-const currentTime = () => {
-    const el = document.querySelector('.hora')
+// const currentTime = () => {
+//     const el = document.querySelector('.hora')
 
-    let date = new Date();
-    let hh = date.getHours();
-    let mm = date.getMinutes();
-    let ss = date.getSeconds();
+//     let date = new Date();
+//     let hh = date.getHours();
+//     let mm = date.getMinutes();
+//     let ss = date.getSeconds();
 
-    hh = hh < 10 ? `0${hh}` : hh;
-    mm = mm < 10 ? `0${mm}` : mm;
-    ss = ss < 10 ? `0${ss}` : ss;
+//     hh = hh < 10 ? `0${hh}` : hh;
+//     mm = mm < 10 ? `0${mm}` : mm;
+//     ss = ss < 10 ? `0${ss}` : ss;
 
 
-    let time = `${hh}:${mm}:${ss}`
-    el.innerText = time;
-}
+//     let time = `${hh}:${mm}:${ss}`
+//     el.innerText = time;
+// }
 
-currentTime();
-setInterval(currentTime, 1000);
+// currentTime();
+// setInterval(currentTime, 1000);
 
 const futDays1 = () => {
     const df1 = document.querySelector('#d-1')
