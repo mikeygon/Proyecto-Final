@@ -228,6 +228,25 @@ h3{
 .boton-agregar:focus {
     outline: none;
 }
+.modal-pago{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.884);
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+}
 
 .modal-contenedor {
     position: fixed;
@@ -249,7 +268,7 @@ h3{
     visibility: visible;
 }
 
-.modal-carrito {
+.modal-carrito{
     position: relative;
     background-color:rgb(224, 224, 224);
     border-radius: 20px;
@@ -288,15 +307,44 @@ h3{
 .modal-carrito .precioProducto {
     padding-top: 10px;
 }
-.finalizar{
-    font-family: fantasy;
-    background-color: rgb(0, 70, 92);
-    padding: 8px;
-    border: none;
+.container-botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+#vaciar-carrito{
+    color:rgb(255, 213, 213);
+    background-color: rgba(184, 0, 0, 0.822);
+}
+.continuar{
+    background-color: rgb(0, 146, 12);
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    padding:1px;
     border-radius: 9px;
-    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
     transition: all .2s;
-
+}
+.continuar:hover{
+    cursor: pointer;
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.finalizar{
+    background-color: rgb(0, 146, 12);
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    padding:1px;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    transition: all .2s;
 }
 .finalizar:hover{
     cursor: pointer;
@@ -310,19 +358,24 @@ h3{
     margin: 5px 0;
     padding: 5px 10px;
     display: flex;
+    justify-content: center;
+    align-content: center;
     justify-content: space-between;
 }
 .productoEnCarrito:hover {
     border-left: 5px solid rgb(5, 33, 119);
 }
 
-.boton-eliminar {
-    background-color: white;
-    color: rgb(219, 33, 33);
-    border: none;
-    font-size: 20px;
+.boton-eliminar img{
+    width: 30px;
+    height: 30px;
 }
-
+ 
+.boton-eliminar{
+    background-color: rgba(182, 174, 174, 0);
+    border: none;
+    
+}
 .boton-eliminar:hover {
     cursor: pointer;
 }

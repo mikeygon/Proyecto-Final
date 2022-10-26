@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark lg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">CINEMA</a>
+            <a class="navbar-brand" href="/index.html">CINEMA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -39,7 +41,7 @@
               </div>
               <a class="search" href="../pages/resultado.html"><img src="../assets/search_FILL0_wght200_GRAD-25_opsz24.svg" alt=""></a>
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="../index.html">Cartelera</a>
+                  <a class="nav-link " aria-current="page" href="/index.html">Cartelera</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="home.html">Cuadros</a>
@@ -62,15 +64,14 @@
  <!--Contenedor de los productos   -->
     <section class="contenedor" id="container">
 <!-- Imagenes Light -->
-    </section>
+   
     <section class="imagen-light">
         <img src="../assets/bx-x.svg" alt="" class="close">
         <img src="" alt="" class="agregar-imagen">
-        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-
       </section>
-    </section>
+   
 <!-- Modal de carrito -->
+
     <div class="modal-contenedor">
       <div class="modal-carrito">
           <h3>Carrito</h3>
@@ -79,10 +80,54 @@
 
           </div>
           <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-          <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
-          <button id="finalizar-compra" class="finalizar">Finalizar Compra</button>
+
+          <div class="container-botones">
+          <button id="vaciar-carrito" class="boton-agregar">Cancelar</button>
+          <button id="continuar-compra" class="continuar">Continuar</button>
+     </div>
+        </section>
+   
+    <!-- Modal Pago -->
+  
+    <section class="container">
+      <div class="modal-pago" class="modal-show">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 border p-3 rounder mx-auto">
+          <h2>Terminado su compra!</h2>
+          <hr />
+          <form action="" method="post" enctype="">
+            <div class="input-group mt-3">
+              <input type="text" class="form-control" placeholder="Nombre" />
+              <div class="input-group mt-3">
+                <input type="text" class="form-control" placeholder="Apellido" />
+              </div>
+              <div class="input-group mt-3">
+                <span class="input-group-text">📱</span>
+                <input type="tel" class="form-control" placeholder="Telefono" />
+              </div>
+              <div class="input-group mt-3">
+                <span class="input-group-text"></span>
+                <input type="tel" class="form-control" placeholder="Tarjeta" />
+              </div>
+              <div class="input-group mt-3" id="pin-venci">
+                <span class="input-group-text"></span>
+                <input type="tel" class="form-control" placeholder="PIN" />
+                <span class="input-group-text"></span>
+                <input type="tel" class="form-control" placeholder="Vencimiento" />
+              </div>
+              <div class="input-group mt-3">
+                <span class="input-group-text">📧</span>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+          </form>
+
+        </div>
+        <button id="finalizar-compra" class="finalizar">Finalizar</button>
+
       </div>
-  </div>
+      </div>
+</section>
+  
 
     <footer>
         <div>

@@ -2,14 +2,14 @@ const contenedorProductos = document.getElementById('container')
 const boton = document.querySelector('#boton');
 const resultado = document.querySelector('.resultado')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
-
 const botonVaciar = document.getElementById('vaciar-carrito')
+const modalPago = document.querySelector('.modal-pago')
 
 const botonFinalizar = document.getElementById('finalizar-compra')
+const botonContinuar = document.getElementById('continuar-compra')
 
 const contadorCarrito = document.getElementById('contadorCarrito')
 
-const cartelFinal = document.getElementById('finalizacion')
 
 
 const cantidad = document.getElementById('cantidad')
@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
  botonVaciar.addEventListener('click', () => {
      carrito.length = 0
      actualizarCarrito()
+ })
+     botonVaciar.addEventListener('click', ()=>{
+        contenedorModal.classList.toggle('modal-active')
  })
  
  //Para agregar al carro //
@@ -95,7 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
          <p>${prod.nombre}</p>
          <p>Precio:$${prod.precio}</p>
          <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
-         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><img src="/assets/Cuadros/trash.png" alt=""
+         ></i></button>
          `
  
          contenedorCarrito.appendChild(div)
@@ -109,26 +113,42 @@ document.addEventListener('DOMContentLoaded', () => {
      console.log(carrito)
      precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
  }
+
  
-  botonFinalizar.addEventListener('click', btnClickFinal);
+
+    botonContinuar.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalPago.classList.add('modal-show');
+    })
+
+    botonContinuar.addEventListener('click', () => {
+
+        contenedorModal.classList.toggle('modal-active')
+
+    })
  
-  function btnClickFinal() {
-      contadorCarrito.innerHTML = '0';
-      contenedorCarrito.innerHTML ='';
-      let mensaje = `<div class="mensaje-final"> MUCHAS GRACIAS POR SU COMPRA!! </br>
-        PUEDE PASATRLA A RECOGER POR NUESTRAS SUCURSALES!! </div>`;
- 
-      contenedorCarrito.innerHTML = mensaje;
- 
-     botonFinalizar.addEventListener('click', ()=>{
-         contenedorModal.classList.toggle('modal-active')
-     })
-     botonFinalizar.addEventListener('click', () => {
-        carrito.length = 0
-        actualizarCarrito()
-     })
+    botonFinalizar.addEventListener('click', ()=>{
+           modalPago.classList.toggle('modal-show')
+       })
+    botonFinalizar.addEventListener('click', () => {
+          carrito.length = 0
+          actualizarCarrito();
+       })
+     
+
+
+
+        
+  
+
+
+
+
    
-  }
+
+   
+  
+  
 
 
  
